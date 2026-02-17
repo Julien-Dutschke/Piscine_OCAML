@@ -4,7 +4,7 @@
 EXEC = main
 
 # Fichiers sources
-SRC =    ft_print_rev.ml
+SRC =    ft_string_all.ml
 
 # Compiler en code natif cad exécutable
 all:
