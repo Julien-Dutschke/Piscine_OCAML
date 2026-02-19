@@ -15,4 +15,9 @@ let ft_string_all (predicate : char -> bool) (chaine : string) : bool =
   boucle_index 0
 
 let () =
-  print_endline(string_of_bool (ft_string_all is_digit "1234567890"));
+  if Array.length Sys.argv > 1 then
+    let argument = Sys.argv.(1) in
+    let resultat = ft_string_all is_digit argument in
+    print_endline (string_of_bool resultat)
+  else
+    print_endline "utilisation: ./programme <chaine_a_tester>"
